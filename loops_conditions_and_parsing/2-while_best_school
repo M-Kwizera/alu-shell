@@ -1,4 +1,4 @@
-#!/bin/env/bash
+#!/usr/bin/env bash
 #initialised variable counter with 1 as a value
 counter=1
 while [ $counter -le 10 ]
