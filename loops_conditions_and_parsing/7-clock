@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
-#loop that prints the hour of the day in details i believe
-COUNT=0
-while((COUNT<=12));do
-	echo "Hour: $COUNT"
-	HOUR=1
-	while((HOUR<=59));do
-		echo "$HOUR"
-		((HOUR++))
-	done;
-((COUNT++))
-done;
+# script that displays the time for 12 hours and 59 minutes: using while loop
+hour=0
+while [ $hour -lt 13 ]; do
+    echo Hour: $hour
+    minute=1
+    while [ $minute -lt 60 ]; do
+	echo $minute
+	((minute++))
+    done
+    ((hour++))
+done

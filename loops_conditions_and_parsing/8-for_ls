@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
-#list all files in each line without the hyphen
-FILES="$(ls)"
-for i in $FILES;
-do
-	NEW=$(find . -maxdepth 1 -name "$i" |cut -d "/" -f2 | cut -d "-" -f2)
-	echo "$NEW"
+# A script that displays the content of the current directory as a list.
+for file in *; do
+	echo "$file" | cut -f 2 -d '-'
 done
