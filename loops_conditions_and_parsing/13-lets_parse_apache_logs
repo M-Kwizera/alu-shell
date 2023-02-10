@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# Print each client IP and HTTP status code from the Apache access log
+# Parses apache log files
 
 awk '{ print $1, $9 }' apache-access.log
