@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # Use awk to parse the Apache log file and extract IP and HTTP status code
 # Store the result in a new file called "grouped_data"
 awk '{print $1 " " $9}' apache-access.log | sort | uniq -c | sort -nr > grouped_data
