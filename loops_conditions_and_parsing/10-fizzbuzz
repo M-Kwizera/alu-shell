@@ -1,13 +1,17 @@
 #!/usr/bin/env bash
 # Displaying a range of 0-100 where fizzbuzz prints with 3 and 5 multiples, fizz+ fizz with mutiples of 3 and buzz with multiples of 5.
-for ((n = 1; n <= 100; ++n))
-do
-    if (( n % 3 && n % 5 ))
-    then
-        echo "$n"
-    else
-        (( n % 3 )) || echo -n 'Fizz'
-        (( n % 5 )) || echo -n 'Buzz'
-        echo
-    fi
+# loop through numbers 1 to 100
+for i in {1..100}; do
+  # check if number is multiple of 3 and 5
+  if [ $((i % 3)) -eq 0 ] && [ $((i % 5)) -eq 0 ]; then
+    echo "FizzBuzz"
+  # check if number is multiple of 3
+  elif [ $((i % 3)) -eq 0 ]; then
+    echo "Fizz"
+  # check if number is multiple of 5
+  elif [ $((i % 5)) -eq 0 ]; then
+    echo "Buzz"
+  else
+    echo $i
+  fi
 done
