@@ -2,7 +2,7 @@
 #This Script displays To infinity and beyond indefinitely  #This Script displays To infinity and beyond indefinitely  
 i=1
 for i in 1; do
-    if [$i -lt 2]; do
+    if [$i -lt 2]; then
        echo "To infinity and beyond"
     fi
 done
