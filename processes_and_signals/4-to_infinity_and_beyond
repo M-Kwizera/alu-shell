@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#This Script displays To infinity and beyond indefinitely  #This Script displays To infinity and beyond indefinitely  
+i=1
+for i in 1; do
+    if [$i -lt 2]; do
+       echo "To infinity and beyond"
+    fi
+done
